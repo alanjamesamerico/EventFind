@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ConnHttp {
 
-    final StringBuilder result = new StringBuilder();
+    private final StringBuilder result = new StringBuilder();
 
     public StringBuilder makeRequest(String urlRquest) {
 

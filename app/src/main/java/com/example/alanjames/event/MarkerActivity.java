@@ -39,8 +39,4 @@ public class MarkerActivity extends ActionBarActivity  {
         contentTime.setText(time);
 
     }
-
-    private Marker getMarker(Marker marker) {
-        return marker;
-    }
 }
