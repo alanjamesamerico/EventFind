@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MarkerActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:text="Tema: " />
+
+    <TextView
+        android:id="@+id/textViewContentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTitle"
+        android:layout_alignBottom="@+id/textViewTitle"
+        android:layout_marginStart="58dp"
+        android:layout_toEndOf="@+id/textViewTitle"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewTitle"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="32dp"
+        android:text="Lugar: " />
+
+    <TextView
+        android:id="@+id/textViewContentVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewContentTitle"
+        android:layout_alignTop="@+id/textViewVenue"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewVenue"
+        android:layout_below="@+id/textViewVenue"
+        android:layout_marginTop="35dp"
+        android:text="Data: " />
+
+    <TextView
+        android:id="@+id/textViewContentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewContentVenue"
+        android:layout_alignTop="@+id/textViewDate"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDate"
+        android:layout_below="@+id/textViewDate"
+        android:layout_marginTop="40dp"
+        android:text="Hora: " />
+
+    <TextView
+        android:id="@+id/textViewContentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHora"
+        android:layout_alignEnd="@+id/textViewContentDate"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnMapBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Voltar ao Mapa" />
+</RelativeLayout>
